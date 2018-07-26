@@ -1,4 +1,4 @@
-# propertymanagement
+# PropertyManagement
 Property management system
 
 Initial requirements:
