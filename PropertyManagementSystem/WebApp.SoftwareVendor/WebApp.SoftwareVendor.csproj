@@ -89,11 +89,89 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Contents\css\bootstrap.min.css" />
+    <Content Include="Contents\css\boxicons.min.css" />
+    <Content Include="Contents\css\imgs\about_bg.jpg" />
+    <Content Include="Contents\css\imgs\about_bg1.jpg" />
+    <Content Include="Contents\css\imgs\breadcrumbs.jpg" />
+    <Content Include="Contents\css\imgs\faq.jpg" />
+    <Content Include="Contents\css\imgs\history_bg.jpg" />
+    <Content Include="Contents\css\imgs\loading.gif" />
+    <Content Include="Contents\css\imgs\lodyas.png" />
+    <Content Include="Contents\css\imgs\play.jpg" />
+    <Content Include="Contents\css\imgs\test_bg.jpg" />
+    <Content Include="Contents\css\responsive.css" />
+    <Content Include="Contents\css\style.css" />
+    <Content Include="Contents\css\uikit.min.css" />
+    <Content Include="Contents\fonts\boxicons.svg" />
+    <Content Include="Contents\images\1200-1.jpg" />
+    <Content Include="Contents\images\1200-2.jpg" />
+    <Content Include="Contents\images\1200-3.jpg" />
+    <Content Include="Contents\images\1200-4.jpg" />
+    <Content Include="Contents\images\200x200-1.jpg" />
+    <Content Include="Contents\images\3-components.png" />
+    <Content Include="Contents\images\about_bg.jpg" />
+    <Content Include="Contents\images\fix-1.jpg" />
+    <Content Include="Contents\images\fix-2.jpg" />
+    <Content Include="Contents\images\fix-3.jpg" />
+    <Content Include="Contents\images\icons\archicture.png" />
+    <Content Include="Contents\images\icons\architecture.png" />
+    <Content Include="Contents\images\icons\construct.png" />
+    <Content Include="Contents\images\icons\construction.png" />
+    <Content Include="Contents\images\icons\consulting.png" />
+    <Content Include="Contents\images\icons\map_icon.png" />
+    <Content Include="Contents\images\icons\renovation.png" />
+    <Content Include="Contents\images\logos\karez-logo-v1.png" />
+    <Content Include="Contents\images\logos\karez-logo-draft.png" />
+    <Content Include="Contents\images\logos\partners_1.png" />
+    <Content Include="Contents\images\logos\partners_2.png" />
+    <Content Include="Contents\images\logos\partners_3.png" />
+    <Content Include="Contents\images\logos\partners_4.png" />
+    <Content Include="Contents\images\logos\partners_5.png" />
+    <Content Include="Contents\images\logos\partners_6.png" />
+    <Content Include="Contents\images\logos\wp_1.png" />
+    <Content Include="Contents\images\logos\wp_2.png" />
+    <Content Include="Contents\images\logos\wp_3.png" />
+    <Content Include="Contents\images\logos\wp_4.png" />
+    <Content Include="Contents\images\logos\wp_5.png" />
+    <Content Include="Contents\images\logos\wp_6.png" />
+    <Content Include="Contents\images\mob-app-1.png" />
+    <Content Include="Contents\images\model-free-photos\man-1-1.jpeg" />
+    <Content Include="Contents\images\model-free-photos\man-1.jpeg" />
+    <Content Include="Contents\images\model-free-photos\man-2-1.jpeg" />
+    <Content Include="Contents\images\model-free-photos\man-2.jpeg" />
+    <Content Include="Contents\images\model-free-photos\man-3-1.jpeg" />
+    <Content Include="Contents\images\model-free-photos\man-3.jpeg" />
+    <Content Include="Contents\images\model-free-photos\man-4.jpeg" />
+    <Content Include="Contents\images\model-free-photos\women-1-1.jpeg" />
+    <Content Include="Contents\images\model-free-photos\women-1.jpeg" />
+    <Content Include="Contents\images\model-free-photos\women-2-1.jpeg" />
+    <Content Include="Contents\images\model-free-photos\women-2.jpeg" />
+    <Content Include="Contents\images\project-1.jpg" />
+    <Content Include="Contents\images\project-2.jpg" />
+    <Content Include="Contents\images\project-3.jpg" />
+    <Content Include="Contents\images\project-4.jpg" />
+    <Content Include="Contents\images\tenant-1.jpg" />
+    <Content Include="Contents\images\tenant-2.jpg" />
+    <Content Include="Contents\images\web-app-1.png" />
+    <Content Include="Contents\images\web-app-2.jpg" />
+    <Content Include="Contents\js\index.js" />
+    <Content Include="Contents\js\jquery.appear.min.js" />
+    <Content Include="Contents\js\jquery.min.js" />
+    <Content Include="Contents\js\odometer.min.js" />
+    <Content Include="Contents\js\uikit.min.js" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProjectsController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -101,7 +179,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Contents\fonts\boxicons.eot" />
+    <Content Include="Contents\fonts\boxicons.ttf" />
+    <Content Include="Contents\fonts\boxicons.woff" />
+    <Content Include="Contents\files\karez.pptx" />
     <None Include="packages.config" />
+    <Content Include="Views\Shared\_LayoutHomePage.cshtml" />
+    <Content Include="Views\Shared\_LayoutInnerPage.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\Services\Index.cshtml" />
+    <Content Include="Views\Projects\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -111,7 +201,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

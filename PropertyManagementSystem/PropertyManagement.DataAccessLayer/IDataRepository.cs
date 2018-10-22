@@ -10,9 +10,9 @@ namespace PropertyManagement.DataAccessLayer
     public interface IDataRepository<T>
     {
         IList<T> GetAllList(params Expression<Func<T, object>>[] expressions);
-        IList<T> GetSelectedList();
+        IList<T> GetSelectedList(Func<T, bool> where, params Expression<Func<T, object>>[] expressions);
 
-        T GetSingle();
+        T GetSingle(Func<T,bool> where, params Expression<Func<T,object>>[] expressions);
 
         void Add(params T[] items);
         void Update(params T[] items);

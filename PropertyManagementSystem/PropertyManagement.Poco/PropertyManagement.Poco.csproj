@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,7 +41,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppCardTypePoco.cs" />
+    <Compile Include="AppClientPoco.cs" />
+    <Compile Include="AppCompanyBranchInfoPoco.cs" />
+    <Compile Include="AppCompanyInfoPoco.cs" />
+    <Compile Include="AppDocumentCategoryPoco.cs" />
+    <Compile Include="AppDocumentTypePoco.cs" />
+    <Compile Include="AppLanguagePoco.cs" />
+    <Compile Include="AppMonthPoco.cs" />
+    <Compile Include="AppPaymentIntervalPoco.cs" />
+    <Compile Include="AppPaymentMethodPoco.cs" />
+    <Compile Include="AppPaymentTypePoco.cs" />
+    <Compile Include="AppProductPoco.cs" />
+    <Compile Include="AppProductPricePlanPoco.cs" />
+    <Compile Include="AppScreenPoco.cs" />
+    <Compile Include="AppScreenPermissionPoco.cs" />
+    <Compile Include="AppUserPoco.cs" />
+    <Compile Include="AppUserGroupPoco.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropAccountTypePoco.cs" />
+    <Compile Include="PropAmenityPoco.cs" />
+    <Compile Include="PropAssetPoco.cs" />
+    <Compile Include="PropAssetTypePoco.cs" />
+    <Compile Include="PropChartOfAccountPoco.cs" />
+    <Compile Include="PropContractorPoco.cs" />
+    <Compile Include="PropCourierCompanyPoco.cs" />
+    <Compile Include="PropCourierPackagePoco.cs" />
+    <Compile Include="PropEnquiryPoco.cs" />
+    <Compile Include="PropEnquiryTypePoco.cs" />
+    <Compile Include="PropFloorPlanPoco.cs" />
+    <Compile Include="PropLegalDocumentPoco.cs" />
+    <Compile Include="PropMaintenanceIssuePoco.cs" />
+    <Compile Include="PropMaintenanceTypePoco.cs" />
+    <Compile Include="PropNoticePoco.cs" />
+    <Compile Include="PropNoticeTypePoco.cs" />
+    <Compile Include="PropPaymentCollectionPoco.cs" />
+    <Compile Include="PropPropertyAmenityPoco.cs" />
+    <Compile Include="PropPropertyInfoPoco.cs" />
+    <Compile Include="PropPropertyTypePoco.cs" />
+    <Compile Include="PropRentalApplicationPoco.cs" />
+    <Compile Include="PropTenantAddressPoco.cs" />
+    <Compile Include="PropTenantCardInfoPoco.cs" />
+    <Compile Include="PropTenantDocumentPoco.cs" />
+    <Compile Include="PropTenantGuarantorPoco.cs" />
+    <Compile Include="PropTenantPackageCollectorPoco.cs" />
+    <Compile Include="PropTenantPoco.cs" />
+    <Compile Include="PropTransactionPoco.cs" />
+    <Compile Include="PropUnitAmenityPoco.cs" />
+    <Compile Include="PropUnitPoco.cs" />
+    <Compile Include="PropUnitTypePoco.cs" />
+    <Compile Include="PropUnitUtilityPoco.cs" />
+    <Compile Include="PropUtilityPoco.cs" />
+    <Compile Include="PropWorkOrderPoco.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
