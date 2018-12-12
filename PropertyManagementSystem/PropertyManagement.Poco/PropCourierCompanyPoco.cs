@@ -14,6 +14,8 @@ namespace PropertyManagement.Poco
         [Key]
         public int CourierCompanyId { get; set; }
         public string Name { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
     }

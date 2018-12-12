@@ -19,6 +19,8 @@ namespace PropertyManagement.Poco
         public int AssetLifeYear { get; set; }
         public decimal AssetValue { get; set; }
         public decimal SalvageValue { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
 

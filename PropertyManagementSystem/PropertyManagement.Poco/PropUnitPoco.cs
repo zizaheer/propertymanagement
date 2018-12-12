@@ -42,6 +42,8 @@ namespace PropertyManagement.Poco
         public byte?[] Unit3DView { get; set; }
         public bool IsAvailable { get; set; }
         public bool IsFeatured { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
 

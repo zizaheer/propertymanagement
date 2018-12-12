@@ -16,6 +16,8 @@ namespace PropertyManagement.Poco
         public int CollectorName { get; set; }
         public int? UnitId { get; set; }
         public int? TenantId { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
 

@@ -17,8 +17,5 @@ namespace PropertyManagement.DataAccessLayer
         void Add(params T[] items);
         void Update(params T[] items);
         void Remove(params T[] items);
-
-
-
     }
 }

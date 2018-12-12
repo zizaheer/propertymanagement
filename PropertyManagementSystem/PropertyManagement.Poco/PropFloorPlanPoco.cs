@@ -20,6 +20,8 @@ namespace PropertyManagement.Poco
         public byte?[] Picture2 { get; set; }
         public byte?[] Picture3 { get; set; }
         public byte?[] Floor3DView { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
     }

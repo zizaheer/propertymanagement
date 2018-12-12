@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace PropertyManagement.Poco
 {
     [Table("App_ScreenPermission")]
-    public class AppScreenPermissionPoco
+    public class AppScreenPermissionPoco : IPoco
     {
         [Key]
         public int PermissionId { get; set; }
@@ -19,6 +19,8 @@ namespace PropertyManagement.Poco
         public bool IsReadPermissionAllowed { get; set; }
         public bool IsUpdatePermissionAllowed { get; set; }
         public bool IsDeletePermissionAllowed { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
 

@@ -19,6 +19,8 @@ namespace PropertyManagement.Poco
         public string Address { get; set; }
         public bool IsDocumentSubmitted { get; set; }
         public int? DocumentId { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
 

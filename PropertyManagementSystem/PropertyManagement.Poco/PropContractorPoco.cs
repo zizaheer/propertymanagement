@@ -26,6 +26,8 @@ namespace PropertyManagement.Poco
         public decimal ContractorRating { get; set; }
         public bool IsActive { get; set; }
         public string Remarks { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
     }

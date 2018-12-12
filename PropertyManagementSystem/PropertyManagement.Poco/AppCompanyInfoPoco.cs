@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 namespace PropertyManagement.Poco
 {
     [Table("App_CompanyInfo")]
-    public class AppCompanyInfoPoco
+    public class AppCompanyInfoPoco : IPoco
     {
-       [Key]
+        [Key]
         public int CompanyId { get; set; }
         public string CompanyName { get; set; }
         public string ContactPerson { get; set; }
@@ -23,7 +23,11 @@ namespace PropertyManagement.Poco
         public string Province { get; set; }
         public string Country { get; set; }
         public int DefaultLanguageId { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
+
+        public virtual ICollection<AppCompanyBranchInfoPoco> AppCompanyBranchInfoPocos { get; set; }
     }
 }

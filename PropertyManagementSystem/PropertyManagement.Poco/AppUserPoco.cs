@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace PropertyManagement.Poco
 {
     [Table("App_User")]
-    public class AppUserPoco
+    public class AppUserPoco : IPoco
     {
         [Key]
         public int UserId { get; set; }
@@ -32,6 +32,8 @@ namespace PropertyManagement.Poco
         public byte?[] ProfilePicture { get; set; }
         public bool IsInitialPasswordChanged { get; set; }
         public bool IsActive { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
     }

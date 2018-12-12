@@ -21,6 +21,8 @@ namespace PropertyManagement.Poco
         public DateTime RequestDate { get; set; }
         public DateTime SubmissionDate { get; set; }
         public string Remarks { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
 

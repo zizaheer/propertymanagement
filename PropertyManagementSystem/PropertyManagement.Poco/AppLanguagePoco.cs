@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace PropertyManagement.Poco
 {
     [Table("App_Language")]
-    public class AppLanguagePoco
+    public class AppLanguagePoco : IPoco
     {
         [Key]
         public int LanguageId { get; set; }
@@ -18,6 +18,8 @@ namespace PropertyManagement.Poco
         public string NativeName { get; set; }
         public byte?[] LanguageFlag { get; set; }
         public bool IsDefaultLanguage { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
     }

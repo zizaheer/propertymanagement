@@ -14,6 +14,8 @@ namespace PropertyManagement.Poco
         [Key]
         public int AmenityId { get; set; }
         public string AmenityName { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
     }

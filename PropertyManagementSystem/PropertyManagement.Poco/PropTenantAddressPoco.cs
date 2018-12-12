@@ -21,6 +21,8 @@ namespace PropertyManagement.Poco
         public string Country { get; set; }
         public DateTime MovedInDate { get; set; }
         public DateTime MovedOutDate { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
     }

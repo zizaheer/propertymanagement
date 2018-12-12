@@ -28,6 +28,8 @@ namespace PropertyManagement.Poco
         public string ContactPersonJobTitle { get; set; }
         public string ContactPersonPhone { get; set; }
         public string ContactPersonEmail { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
     }

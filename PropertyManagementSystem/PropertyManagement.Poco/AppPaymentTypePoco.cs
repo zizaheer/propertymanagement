@@ -9,11 +9,13 @@ using System.Threading.Tasks;
 namespace PropertyManagement.Poco
 {
     [Table("App_PaymentType")]
-    public class AppPaymentTypePoco
+    public class AppPaymentTypePoco : IPoco
     {
         [Key]
         public int PaymentTypeId { get; set; }
         public string TypeName { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
     }

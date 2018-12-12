@@ -18,6 +18,8 @@ namespace PropertyManagement.Poco
         public byte?[] DocumentFile { get; set; }
         public bool IsPublic { get; set; }
         public bool IsReadOnly { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
     }

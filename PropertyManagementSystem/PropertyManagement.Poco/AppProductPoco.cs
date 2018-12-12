@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace PropertyManagement.Poco
 {
     [Table("App_Product")]
-    public class AppProductPoco
+    public class AppProductPoco : IPoco
     {
 
         [Key]
@@ -17,6 +17,8 @@ namespace PropertyManagement.Poco
         public string ProductCode { get; set; }
         public string ProductTitle { get; set; }
         public string Highlights { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
     }

@@ -27,6 +27,8 @@ namespace PropertyManagement.Poco
         public byte?[] ProfilePicture { get; set; }
         public bool AllowConciergeToReceivePackage { get; set; }
         public bool IsActive { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
 

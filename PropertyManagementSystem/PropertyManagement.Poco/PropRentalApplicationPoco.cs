@@ -26,6 +26,8 @@ namespace PropertyManagement.Poco
         public int CreditScore { get; set; }
         public DateTime? ApprovedDate { get; set; }
         public string RejectionReason { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
     }

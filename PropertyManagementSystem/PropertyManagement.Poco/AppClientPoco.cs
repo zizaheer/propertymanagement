@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace PropertyManagement.Poco
 {
     [Table("App_Client")]
-    public class AppClientPoco
+    public class AppClientPoco : IPoco
     {
         [Key]
         public int ClientId { get; set; }
@@ -21,6 +21,9 @@ namespace PropertyManagement.Poco
         public string Country { get; set; }
         public string ContactNumber { get; set; }
         public string EmailAddress { get; set; }
+
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
     }

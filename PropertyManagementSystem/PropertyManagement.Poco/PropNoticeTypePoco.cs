@@ -14,6 +14,8 @@ namespace PropertyManagement.Poco
         [Key]
         public int NoticeTypeId { get; set; }
         public string TypeName { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
 

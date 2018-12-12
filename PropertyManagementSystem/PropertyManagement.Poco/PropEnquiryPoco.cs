@@ -21,6 +21,8 @@ namespace PropertyManagement.Poco
         public string EmailAddress { get; set; }
         public string PhoneNumber { get; set; }
         public string EnquiryDetails { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
     }

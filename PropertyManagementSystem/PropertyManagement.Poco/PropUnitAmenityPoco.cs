@@ -18,6 +18,8 @@ namespace PropertyManagement.Poco
         public decimal FeeAmount { get; set; }
         public int PaymentIntervalId { get; set; }
         public bool IsActive { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
     }

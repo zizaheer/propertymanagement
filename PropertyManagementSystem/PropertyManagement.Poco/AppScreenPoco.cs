@@ -9,11 +9,13 @@ using System.Threading.Tasks;
 namespace PropertyManagement.Poco
 {
     [Table("App_Screen")]
-    public class AppScreenPoco
+    public class AppScreenPoco : IPoco
     {
         [Key]
         public int ScreenId { get; set; }
         public string ScreenName { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
     }

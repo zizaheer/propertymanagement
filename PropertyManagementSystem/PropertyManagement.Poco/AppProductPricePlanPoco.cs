@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace PropertyManagement.Poco
 {
     [Table("App_ProductPricePlan")]
-    public class AppProductPricePlanPoco
+    public class AppProductPricePlanPoco : IPoco
     {
         [Key]
         public int PlanId { get; set; }
@@ -23,6 +23,8 @@ namespace PropertyManagement.Poco
         public decimal? FeePerScreeningProcess { get; set; }
         public decimal? ImplementationFee { get; set; }
         public string Remarks { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
 

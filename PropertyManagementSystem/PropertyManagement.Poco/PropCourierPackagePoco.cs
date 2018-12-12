@@ -21,6 +21,8 @@ namespace PropertyManagement.Poco
         public int CollectorId { get; set; }
         public DateTime CollectedDate { get; set; }
         public string DocumentShown { get; set; } // name of the ID shown during collection
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
     }

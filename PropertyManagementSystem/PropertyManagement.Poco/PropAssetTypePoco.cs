@@ -14,6 +14,8 @@ namespace PropertyManagement.Poco
         [Key]
         public int AssetTypeId { get; set; }
         public string AssetTypeName { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
 

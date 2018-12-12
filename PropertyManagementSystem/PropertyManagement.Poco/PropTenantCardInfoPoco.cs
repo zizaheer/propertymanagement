@@ -19,6 +19,8 @@ namespace PropertyManagement.Poco
         public string CardNumber { get; set; }
         public DateTime ExpiryDate { get; set; }
         public string CVV { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreateDate { get; set; }
         public int CreatedBy { get; set; }
     }
