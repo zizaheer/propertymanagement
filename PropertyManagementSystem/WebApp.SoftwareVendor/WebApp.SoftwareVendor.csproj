@@ -137,16 +137,10 @@
     <Content Include="Contents\images\logos\wp_6.png" />
     <Content Include="Contents\images\mob-app-1.png" />
     <Content Include="Contents\images\model-free-photos\man-1-1.jpeg" />
-    <Content Include="Contents\images\model-free-photos\man-1.jpeg" />
     <Content Include="Contents\images\model-free-photos\man-2-1.jpeg" />
-    <Content Include="Contents\images\model-free-photos\man-2.jpeg" />
     <Content Include="Contents\images\model-free-photos\man-3-1.jpeg" />
-    <Content Include="Contents\images\model-free-photos\man-3.jpeg" />
-    <Content Include="Contents\images\model-free-photos\man-4.jpeg" />
     <Content Include="Contents\images\model-free-photos\women-1-1.jpeg" />
-    <Content Include="Contents\images\model-free-photos\women-1.jpeg" />
     <Content Include="Contents\images\model-free-photos\women-2-1.jpeg" />
-    <Content Include="Contents\images\model-free-photos\women-2.jpeg" />
     <Content Include="Contents\images\project-1.jpg" />
     <Content Include="Contents\images\project-2.jpg" />
     <Content Include="Contents\images\project-3.jpg" />
